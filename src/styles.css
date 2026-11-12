@@ -1,0 +1,48 @@
+
+/* CONFIGURAÇÕES GLOBAIS */
+
+:root {
+    /* Cores */
+    --roxo: rgb(158, 172, 231);
+    --roxo-escuro: rgb(47, 35, 70);
+    --azul-claro: #60A5FA;
+    --branco: #ffffff;
+    --cinza-fundo: #f0f0f0;
+    --cinza-texto: #383838;
+    --verde-escuro: rgb(35, 122, 85);
+    --vermelho: rgb(215, 44, 60);
+    --cor-especial: rgb(70, 71, 124);
+
+
+    /* Tamanhos de texto */
+    --titulo-principal: 40px;
+    --titulo-secao: 35px;
+    --subtitulo: 25px;
+    --texto-normal: 20px;
+    --texto-pequeno: 16px;
+}
+
+/* Configuração geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Página */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--cinza-fundo);
+    color: var(--cinza-texto);
+}
+
+/* Ajuste para navegação por âncoras */
+section {
+    scroll-margin-top: 80px;
+}

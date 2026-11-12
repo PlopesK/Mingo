@@ -1,0 +1,305 @@
+/* ============================= */
+/* CABEÇALHO E NAVEGAÇÃO */
+/* ============================= */
+
+header {
+    width: 100%;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--roxo);
+    color: white;
+
+    width: 100%;
+    padding: 18px 40px;
+
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+/* Logo */
+.logo {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Lista de navegação */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    list-style: none;
+}
+
+/* Links */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.navbar a:hover {
+    background-color: var(--roxo-escuro);
+    color: white;
+}
+
+
+/* ============================= */
+/* APRESENTAÇÃO */
+/* ============================= */
+
+#apresentacao {
+    text-align: center;
+    margin: 100px auto 80px auto;
+    padding: 20px;
+    background-color: var(--cor-especial);
+    color: black;
+}
+
+
+#apresentacao h1 {
+    font-size: var(--titulo-principal);
+    color: var(--roxo-claro);
+    margin-bottom: 20px;
+    color: white;
+}
+
+#apresentacao h3 {
+    font-size: var(--subtitulo);
+    color: var(--cinza-texto);
+    margin-bottom: 15px;
+    color: white;
+}
+
+#apresentacao p {
+    font-size: var(--texto-normal);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    color: white;
+}
+
+
+/* ============================= */
+/* SEÇÃO SOBRE */
+/* ============================= */
+#sobre {
+    color:black;
+    margin-top: -30px;
+}
+
+#sobre p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ============================= */
+/* SEÇÃO UTILIDADE */
+/* ============================= */
+
+#utilidade {
+    color: black;
+}
+
+
+/* ============================= */
+/* BOTÕES */
+/* ============================= */
+
+button {
+    background-color: var(--roxo-escuro);
+    color: white;
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+    margin: 10px 5px;
+
+    transition: background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.botaoHabilidade {
+    background-color: var(--vermelho);
+}
+
+.botaoBasico {
+    background-color: var(--verde-escuro);
+}
+
+button:hover {
+    background-color: #330453;
+    transform: translateY(-2px);
+}
+
+/* ============================= */
+/* RODAPÉ */
+/* ============================= */
+
+footer {
+    background-color: #1d1d49;
+    color: white;
+    margin-top: 60px;
+    padding: 25px 30px;
+}
+
+.footer-container {
+    max-width: 1700px;
+    margin: auto;
+}
+
+/* Foto do Mingo */
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.footer-top img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.footer-top h2 {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.footer-top span {
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.footer-top p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Links e informações */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Direitos autorais */
+
+.footer-copy {
+    max-width: 180px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-copy img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.footer-copy p {
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+
+/* ============================= */
+/* RESPONSIVIDADE - CELULAR      */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    #apresentacao {
+        margin: 50px auto;
+    }
+
+    #apresentacao h1 {
+        font-size: 32px;
+    }
+
+    #apresentacao h3 {
+        font-size: 21px;
+    }
+
+    #apresentacao p {
+        font-size: 17px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-links {
+        min-width: 130px;
+    }
+
+    .footer-copy {
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
+
+}
