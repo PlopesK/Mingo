@@ -1,17 +1,17 @@
-
 /* CONFIGURAÇÕES GLOBAIS */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
 
 :root {
     /* Cores */
     --roxo: rgb(158, 172, 231);
     --roxo-escuro: rgb(47, 35, 70);
-    --azul-claro: #60A5FA;
+    --azul-claro: #9EACE7;
     --branco: #ffffff;
     --cinza-fundo: #f0f0f0;
     --cinza-texto: #383838;
     --verde-escuro: rgb(35, 122, 85);
     --vermelho: rgb(215, 44, 60);
-    --cor-especial: rgb(70, 71, 124);
+    --cor-especial: rgba(43, 44, 104, 0.87);
 
 
     /* Tamanhos de texto */

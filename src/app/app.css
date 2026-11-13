@@ -3,11 +3,16 @@
 /* ============================= */
 
 #apresentacao {
-    text-align: center;
+    text-align: left;
     margin: 100px auto 80px auto;
     padding: 20px;
     background-color: var(--cor-especial);
     color: black;
+    font-family: 'Dongle', sans-serif;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    box-shadow: #1d1d49 0px 4px 6px -1px, #1d1d49 0px 2px 4px -1px;
 }
 
 
@@ -26,12 +31,30 @@
 }
 
 #apresentacao p {
-    font-size: var(--texto-normal);
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
     line-height: 1.6;
     margin-bottom: 12px;
     color: white;
 }
 
+#apresentacao .esq {
+    flex: 1;
+    padding-right: 20px;
+}
+
+#apresentacao .dir {
+    flex: 1;
+    text-align: center;
+    width: 50%;
+}
+
+#apresentacao .dir img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
 /* ============================= */
 /* SEÇÃO SOBRE */

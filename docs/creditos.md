@@ -1,0 +1,1 @@
+Imagem na apresentação: https://pixabay.com/images/search/studying/
