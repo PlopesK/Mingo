@@ -22,8 +22,8 @@ footer {
 }
 
 .footer-top img {
-    width: 75px;
-    height: 75px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
 }
 
@@ -82,12 +82,30 @@ footer {
 }
 
 .footer-copy img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
 }
 
 .footer-copy p {
     font-size: 15px;
     line-height: 2;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-links {
+        min-width: 130px;
+    }
+
+    .footer-copy {
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
 }

@@ -171,23 +171,6 @@ button:hover {
 /* ============================= */
 
 @media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px 10px;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .navbar a {
-        font-size: 16px;
-    }
-
     #apresentacao {
         margin: 50px auto;
     }
@@ -212,21 +195,4 @@ button:hover {
     .beneficios-grid {
         grid-template-columns: 1fr;
     }
-
-    .footer-bottom {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        text-align: center;
-    }
-
-    .footer-links {
-        min-width: 130px;
-    }
-
-    .footer-copy {
-        width: 100%;
-        max-width: none;
-        margin-top: 20px;
-    }
-
 }
