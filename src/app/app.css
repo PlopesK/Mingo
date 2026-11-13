@@ -171,19 +171,25 @@ button:hover {
 /* ============================= */
 
 @media (max-width: 768px) {
+    .cube {
+        flex-direction: column;
+        text-align: center;
+    }
+
     #apresentacao {
         margin: 50px auto;
     }
 
     #apresentacao h1 {
         font-size: 32px;
+        text-align: center;
     }
 
-    #apresentacao h3 {
-        font-size: 21px;
+    h3 {
+        font-size: 20px;
     }
 
-    #apresentacao p {
+    p {
         font-size: 17px;
     }
 
