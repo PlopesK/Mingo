@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [Header],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-
-export class App {
-  titulo = 'Dominando o Inglês com Tecnologia';
-}
+export class App {}
