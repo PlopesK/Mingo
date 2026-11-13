@@ -1,5 +1,5 @@
 /* CONFIGURAÇÕES GLOBAIS */
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 :root {
     /* Cores */
@@ -40,6 +40,12 @@ body {
     min-height: 100vh;
     background-color: var(--cinza-fundo);
     color: var(--cinza-texto);
+    font-family: 'Inter', sans-serif;
+    font-size: var(--texto-normal);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Nunito', sans-serif;
 }
 
 /* Ajuste para navegação por âncoras */
