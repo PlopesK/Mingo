@@ -52,3 +52,49 @@ h1, h2, h3, h4 {
 section {
     scroll-margin-top: 80px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* TERMOS E PRIVACIDADE      */
+/* ============================= */
+.legal {
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1000px;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.legal h1 {
+    font-size: var(--titulo-principal);
+    margin-bottom: 20px;
+}
+
+.legal h4 {
+    font-size: var(--subtitulo);
+    margin-bottom: 30px;
+    color: var(--cor-especial);
+}
+
+.legal p {
+    font-size: var(--texto-normal);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.legal ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.legal ul li {
+    margin-bottom: 10px;
+}
