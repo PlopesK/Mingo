@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
   selector: 'app-challenge',
+  standalone: true,
+  imports: [RouterLink],
   styleUrl: './challenge.css',
   templateUrl: './challenge.html',
 })

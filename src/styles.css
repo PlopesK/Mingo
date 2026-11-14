@@ -91,39 +91,33 @@ img {
 }
 
 /* Botões */
-button {
+.btn {
+    display: inline-block;
     background-color: var(--roxo-escuro);
     color: white;
-
-    padding: 12px 25px;
-
+    padding: 20px 30px;
     font-size: 18px;
+    text-decoration: none;
     border: none;
     border-radius: 8px;
-
     cursor: pointer;
-    margin: 10px 10px;
-
-    transition: background-color 0.3s ease,
-        transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background-color: #330453;
+.btn:hover {
+    background-color: #330453 !important;
     transform: translateY(-2px);
 }
 
 .botaoHabilidade {
     background-color: var(--vermelho);
-    margin-left: 0px;
 }
 
 .botaoBasico {
     background-color: var(--verde-escuro);
-    margin-right: 0px;
 }
 
-#apresentacao button {
+#apresentacao .btn {
     padding: 20px 30px;
 }
 
@@ -189,7 +183,7 @@ button:hover {
         font-size: 17px !important;
     }
 
-    button {
+    .btn {
         font-size: 16px !important;
         padding: 10px 18px !important;
     }
