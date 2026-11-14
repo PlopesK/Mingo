@@ -222,6 +222,128 @@ export const perguntasMedias: Pergunta[] = [
 // ********************************************** //
 // ************* Perguntas Dificeis ************* //
 // ********************************************** //
+export const perguntasDificeis: Pergunta[] = [
+  {
+    id: 21,
+    enunciado: 'Complete the Third Conditional: If I had studied harder, I _____ the exam.',
+    alternativas: [
+      'will pass',
+      'would pass',
+      'would have passed',
+      'had passed'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'O Third Conditional fala de situações hipotéticas no passado. Sua estrutura é If + Past Perfect, would have + particípio passado.'
+  },
+  {
+    id: 22,
+    enunciado: 'Choose the correct Passive Voice sentence:',
+    alternativas: [
+      'The company founded in 1990.',
+      'The company was founded in 1990.',
+      'The company is found in 1990.',
+      'The company has found in 1990.'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Na voz passiva do passado, usamos was/were + particípio passado. Founded é o particípio de found, no sentido de fundar.'
+  },
+  {
+    id: 23,
+    enunciado: 'Change to Reported Speech: She said, "I am tired."',
+    alternativas: [
+      'She said that I am tired.',
+      'She said that she is tired.',
+      'She said that she was tired.',
+      'She said that she has tired.'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'No discurso indireto, quando o verbo introdutório está no passado, geralmente fazemos o backshift: am passa para was.'
+  },
+  {
+    id: 24,
+    enunciado: 'What does "reluctant" mean?',
+    alternativas: [
+      'Entusiasmado',
+      'Relutante',
+      'Confiante',
+      'Indiferente'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Reluctant descreve alguém que não está disposto ou está hesitante em fazer algo.'
+  },
+  {
+    id: 25,
+    enunciado: 'Complete the Mixed Conditional: If I had accepted that job, I _____ in London now.',
+    alternativas: [
+      'would live',
+      'will live',
+      'would be living',
+      'would have lived'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'O Mixed Conditional conecta uma condição hipotética no passado a uma consequência no presente. Usamos If + Past Perfect e would + verbo.'
+  },
+  {
+    id: 26,
+    enunciado: 'Choose the correct sentence using a Modal Verb:',
+    alternativas: [
+      'You must to wear a seat belt.',
+      'You must wearing a seat belt.',
+      'You must wear a seat belt.',
+      'You must wears a seat belt.'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Depois de verbos modais como must, can e should, usamos o verbo principal na forma base, sem to.'
+  },
+  {
+    id: 27,
+    enunciado: 'Complete: The woman _____ lives next door is a doctor.',
+    alternativas: [
+      'which',
+      'whose',
+      'who',
+      'where'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Who é um pronome relativo utilizado para se referir a pessoas. Which é usado principalmente para coisas e animais.'
+  },
+  {
+    id: 28,
+    enunciado: 'What does the phrasal verb "give up" mean?',
+    alternativas: [
+      'Continuar',
+      'Desistir',
+      'Descobrir',
+      'Entregar algo a alguém'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Give up significa desistir ou abandonar uma tentativa, atividade ou hábito.'
+  },
+  {
+    id: 29,
+    enunciado: 'Complete: By the time we arrived, the movie _____.',
+    alternativas: [
+      'already started',
+      'has already started',
+      'had already started',
+      'was already start'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'O Past Perfect indica uma ação que aconteceu antes de outra ação no passado. Sua estrutura é had + particípio passado.'
+  },
+  {
+    id: 30,
+    enunciado: 'Choose the correct meaning of "Nevertheless":',
+    alternativas: [
+      'Além disso',
+      'Portanto',
+      'No entanto',
+      'Por exemplo'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Nevertheless significa no entanto ou apesar disso. É usado para introduzir uma ideia que contrasta com a anterior.'
+  }
+];
 
 // ************* Sorteio de perguntas ************* //
 export function sortearPerguntas(
