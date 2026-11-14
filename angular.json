@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "ingles-com-tecnologia": {
+    "mingo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ingles-com-tecnologia:build:production"
+              "buildTarget": "mingo:build:production"
             },
             "development": {
-              "buildTarget": "ingles-com-tecnologia:build:development"
+              "buildTarget": "mingo:build:development"
             }
           },
           "defaultConfiguration": "development"
