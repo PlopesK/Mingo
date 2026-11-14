@@ -1,0 +1,55 @@
+<section class="historico-container">
+
+  <div class="historico-header">
+    <h1>Meu Histórico</h1>
+    <p>Acompanhe sua evolução no inglês!</p>
+  </div>
+
+  @if (resultados.length > 0) {
+
+    <div class="historico-lista">
+
+      @for (resultado of resultados; track $index) {
+
+        <article class="resultado-card">
+
+          <div class="resultado-info">
+            <span class="dificuldade">
+              {{ resultado.dificuldade }}
+            </span>
+
+            <h3>
+              {{ resultado.acertos }} de {{ resultado.total }} acertos
+            </h3>
+
+            <p>
+              {{ resultado.data | date:'dd/MM/yyyy HH:mm' }}
+            </p>
+          </div>
+
+          <div class="resultado-percentual">
+            {{ resultado.percentual }}%
+          </div>
+
+        </article>
+
+      }
+
+    </div>
+
+    <button
+      class="btn-apagar"
+      (click)="apagarHistorico()">
+      Limpar histórico
+    </button>
+
+  } @else {
+
+    <div class="historico-vazio">
+      <h2>Nenhuma atividade encontrada!</h2>
+      <p>Complete um quiz para começar a acompanhar seu progresso.</p>
+    </div>
+
+  }
+
+</section>

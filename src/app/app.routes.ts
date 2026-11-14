@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { Challenge } from './pages/challenge/challenge';
 import { Hub } from './pages/challenge/hub/hub';
+import { Historico } from './pages/challenge/historico/historico';
 
 import { Easy } from './pages/challenge/hub/levelSelect/easy';
 import { Medium } from './pages/challenge/hub/levelSelect/medium';
@@ -15,6 +16,7 @@ export const routes: Routes = [
   { path: '', component: Home },
   { path: 'challenge', component: Challenge },
   { path: 'hub', component: Hub },
+  { path: 'historico', component: Historico},
   { path: 'easy', component: Easy },
   { path: 'medium', component: Medium },
   { path: 'hard', component: Hard },
