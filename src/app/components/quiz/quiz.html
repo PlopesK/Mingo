@@ -1,0 +1,145 @@
+@if (perguntas.length > 0) {
+
+  <section class="quiz">
+
+    @if (!finalizado) {
+
+      <div class="quiz-header">
+        <h1>Desafio {{ dificuldade }}</h1>
+
+        <p>
+          Questão {{ indiceAtual + 1 }}
+          de {{ perguntas.length }}
+        </p>
+
+        <div class="progresso">
+          <div
+            class="progresso-preenchido"
+            [style.width.%]="((indiceAtual + 1) / perguntas.length) * 100">
+          </div>
+        </div>
+      </div>
+
+      <div class="questao">
+
+        <h2>{{ perguntaAtual.enunciado }}</h2>
+
+        <div class="alternativas">
+
+          @for (alternativa of perguntaAtual.alternativas; track $index) {
+
+            <button
+              type="button"
+              class="alternativa"
+              [class.selecionada]="respostaAtual === $index"
+              (click)="selecionarResposta($index)">
+
+              {{ alternativa }}
+
+            </button>
+
+          }
+
+        </div>
+
+      </div>
+
+      <button
+        type="button"
+        class="btn-proximo"
+        [disabled]="respostaAtual === null"
+        (click)="proximaPergunta()">
+
+        {{ indiceAtual === perguntas.length - 1 ? 'Finalizar desafio' : 'Próxima questão' }}
+
+      </button>
+
+    } @else {
+
+      <div class="resultado">
+
+        <h1>Desafio concluído! 🦉</h1>
+
+        <h2>
+          Você acertou {{ acertos }} de {{ perguntas.length }} questões!
+        </h2>
+
+        <p>
+          Sua pontuação:
+          {{ (acertos / perguntas.length) * 100 }}%
+        </p>
+
+        <div class="revisao">
+
+          <h2>Confira suas respostas</h2>
+
+          @for (pergunta of perguntas; track pergunta.id; let i = $index) {
+
+            <div class="revisao-questao">
+
+              <h3>{{ i + 1 }}. {{ pergunta.enunciado }}</h3>
+
+              @if (respostasSelecionadas[i] === pergunta.respostaCorreta) {
+
+                <p class="correto">
+                  <strong>Resposta correta!</strong>
+                </p>
+
+              } @else {
+
+                <p class="incorreto">
+                  <strong>Resposta incorreta.</strong>
+                </p>
+
+              }
+
+              <p>
+                Sua resposta:
+                {{ pergunta.alternativas[respostasSelecionadas[i]] }}
+              </p>
+
+              <p>
+                Resposta correta:
+                {{ pergunta.alternativas[pergunta.respostaCorreta] }}
+              </p>
+
+              <p>{{ pergunta.explicacao }}</p>
+
+            </div>
+
+          }
+
+        </div>
+
+        <div class="botoes">
+          <button
+            type="button"
+            class="btn-proximo"
+            (click)="novaPartida()">
+
+            Tentar novamente
+
+          </button>
+
+          <button
+            type="button"
+            class="btn-proximo"
+            routerLink="/hub" 
+            fragment="inicio">
+
+            Voltar ao Hub
+
+          </button>
+        </div>
+
+      </div>
+
+    }
+
+  </section>
+
+} @else {
+
+  <p>Nenhuma pergunta disponível.</p>
+
+}

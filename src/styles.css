@@ -91,10 +91,9 @@ img {
 }
 
 /* Botões */
-.btn {
+.btn, button {
     display: inline-block;
     background-color: var(--roxo-escuro);
-    color: white;
     padding: 20px 30px;
     font-size: 18px;
     text-decoration: none;
@@ -104,7 +103,7 @@ img {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn:hover {
+.btn:hover, button:hover {
     background-color: #330453 !important;
     transform: translateY(-2px);
 }
