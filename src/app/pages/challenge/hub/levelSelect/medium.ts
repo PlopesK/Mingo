@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-//import { RouterLink } from '@angular/router';
+import { Quiz } from '../../../../components/quiz/quiz';
+import { perguntasMedias } from '../../../../data/perguntas';
 
 @Component({
   selector: 'app-medium',
   standalone: true,
-  //imports: [RouterLink],
-  styleUrl: './select.css',
-  templateUrl: './medium.html',
+  imports: [Quiz],
+  templateUrl: './medium.html'
 })
-export class Medium {}
+export class Medium {
+  bancoPerguntas = perguntasMedias;
+}

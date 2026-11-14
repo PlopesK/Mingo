@@ -35,4 +35,50 @@ export class Historico implements OnInit {
       this.resultados = [];
     }
   }
+
+  get totalPartidas(): number {
+    return this.resultados.length;
+  }
+
+  get totalAcertos(): number {
+    return this.resultados.reduce(
+      (total, resultado) => total + resultado.acertos,
+      0
+    );
+  }
+
+  get totalQuestoes(): number {
+    return this.resultados.reduce(
+      (total, resultado) => total + resultado.total,
+      0
+    );
+  }
+
+  get mediaAcertos(): number {
+    if (this.totalQuestoes === 0) return 0;
+
+    return Math.round(
+      (this.totalAcertos / this.totalQuestoes) * 100
+    );
+  }
+
+  get melhorResultado(): number {
+    if (this.resultados.length === 0) return 0;
+
+    return Math.max(
+      ...this.resultados.map(resultado => resultado.percentual)
+    );
+  }
+
+  get ultimosResultados(): ResultadoQuiz[] {
+    return [...this.resultados]
+      .reverse()
+      .slice(-10);
+  }
+
+  get maiorPercentual(): number {
+    if (this.ultimosResultados.length === 0) return 100;
+
+    return 100;
+  }
 }

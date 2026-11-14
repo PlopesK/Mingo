@@ -35,7 +35,7 @@
 
 .dificuldade {
   font-weight: bold;
-  color: #d08a4e;
+  color: var(--cor-especial);
 }
 
 .resultado-info h3 {
@@ -51,7 +51,7 @@
 .resultado-percentual {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #d08a4e;
+  color: var(--cor-especial);
 }
 
 .btn-apagar {
@@ -69,4 +69,134 @@
   padding: 50px 20px;
   background: white;
   border-radius: 16px;
+}
+
+.estatisticas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.estatistica-card {
+  background: white;
+  padding: 22px 15px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.estatistica-card span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.estatistica-card h2 {
+  color: var(--cor-especial);
+  font-size: 2rem;
+  margin: 12px 0 0;
+}
+
+.grafico-container {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 35px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.grafico-header {
+  margin-bottom: 30px;
+}
+
+.grafico-header h2 {
+  margin-bottom: 5px;
+}
+
+.grafico-header p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.grafico {
+  height: 230px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 12px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 5px;
+}
+
+.grafico-coluna {
+  flex: 1;
+  max-width: 65px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.grafico-percentual {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--cor-especial);
+}
+
+.grafico-barra-container {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+  background: #f2eee9;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
+.grafico-barra {
+  width: 100%;
+  min-height: 0;
+  background: linear-gradient(180deg, #746ce9, var(--cor-especial));
+  border-radius: 8px 8px 0 0;
+  transition: height 0.5s ease;
+}
+
+.grafico-data {
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 500px) {
+  .grafico-container {
+    padding: 15px;
+  }
+
+  .grafico {
+    gap: 6px;
+  }
+
+  .grafico-percentual {
+    font-size: 0.7rem;
+  }
+
+  .grafico-data {
+    font-size: 0.65rem;
+  }
+}
+
+/* Responsividade */
+
+@media (max-width: 700px) {
+  .estatisticas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .estatisticas {
+    grid-template-columns: 1fr;
+  }
 }

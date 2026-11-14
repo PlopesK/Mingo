@@ -96,3 +96,15 @@
 .incorreto {
     color: #dc3545;
 }
+
+#hub {
+    background: var(--vermelho);
+}
+
+#tentar {
+    background: var(--verde-escuro);
+}
+
+#hist {
+    background-color: var(--cor-especial);
+}

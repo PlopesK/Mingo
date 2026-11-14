@@ -7,6 +7,63 @@
 
   @if (resultados.length > 0) {
 
+    <div class="estatisticas">
+      <div class="estatistica-card">
+        <span>Partidas realizadas</span>
+        <h2>{{ totalPartidas }}</h2>
+      </div>
+
+      <div class="estatistica-card">
+        <span>Questões corretas</span>
+        <h2>{{ totalAcertos }}</h2>
+      </div>
+
+      <div class="estatistica-card">
+        <span>Média de acertos</span>
+        <h2>{{ mediaAcertos }}%</h2>
+      </div>
+
+      <div class="estatistica-card">
+        <span>Melhor resultado</span>
+        <h2>{{ melhorResultado }}%</h2>
+      </div>
+    </div>
+
+    <div class="grafico-container">
+      <div class="grafico-header">
+        <h2>Sua evolução</h2>
+        <p>Desempenho nos últimos 10 quizzes</p>
+      </div>
+
+      <div class="grafico">
+
+        @for (resultado of ultimosResultados; track $index) {
+
+          <div class="grafico-coluna">
+
+            <span class="grafico-percentual">
+              {{ resultado.percentual }}%
+            </span>
+
+            <div class="grafico-barra-container">
+
+              <div
+                class="grafico-barra"
+                [style.height.%]="resultado.percentual">
+              </div>
+
+            </div>
+
+            <span class="grafico-data">
+              {{ resultado.data | date:'dd/MM' }}
+            </span>
+
+          </div>
+
+        }
+      </div>
+    </div>
+
     <div class="historico-lista">
 
       @for (resultado of resultados; track $index) {

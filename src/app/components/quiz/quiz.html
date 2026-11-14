@@ -115,7 +115,19 @@
           <button
             type="button"
             class="btn-proximo"
-            (click)="novaPartida()">
+            routerLink="/hub" 
+            fragment="inicio"
+            id="hub">
+
+            Voltar ao Hub
+
+          </button>
+
+          <button
+            type="button"
+            class="btn-proximo"
+            (click)="novaPartida()"
+            id="tentar">
 
             Tentar novamente
 
@@ -124,10 +136,11 @@
           <button
             type="button"
             class="btn-proximo"
-            routerLink="/hub" 
-            fragment="inicio">
+            routerLink="/historico" 
+            fragment="inicio"
+            id="hist">
 
-            Voltar ao Hub
+            Ver meu Histórico
 
           </button>
         </div>

@@ -7,7 +7,9 @@ export interface Pergunta {
   explicacao: string;
 }
 
+// ********************************************** //
 // ************* Perguntas fáceis ************* //
+// ********************************************** //
 export const perguntasFaceis: Pergunta[] = [
   {
     id: 1,
@@ -90,6 +92,136 @@ export const perguntasFaceis: Pergunta[] = [
     explicacao: 'Utilizamos an antes de palavras com som inicial de vogal, como orange.'
   }
 ];
+
+// ********************************************** //
+// ************* Perguntas Médias ************* //
+// ********************************************** //
+export const perguntasMedias: Pergunta[] = [
+  {
+    id: 11,
+    enunciado: 'Choose the correct sentence in the Past Simple:',
+    alternativas: [
+      'I go to school yesterday.',
+      'I went to school yesterday.',
+      'I gone to school yesterday.',
+      'I going to school yesterday.'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Went é o passado irregular do verbo go. Usamos Past Simple para ações concluídas no passado.'
+  },
+  {
+    id: 12,
+    enunciado: 'Complete: My house is _____ than yours.',
+    alternativas: [
+      'big',
+      'biggest',
+      'bigger',
+      'more big'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Para comparar duas coisas, usamos bigger (maior). Em adjetivos curtos, geralmente acrescentamos -er.'
+  },
+  {
+    id: 13,
+    enunciado: 'Complete: She _____ visited London three times.',
+    alternativas: [
+      'have',
+      'has',
+      'had',
+      'is'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'No Present Perfect, usamos has com he, she e it. A estrutura é has + particípio passado.'
+  },
+  {
+    id: 14,
+    enunciado: 'Complete: The meeting starts _____ 7 o’clock.',
+    alternativas: [
+      'in',
+      'on',
+      'at',
+      'by'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Usamos at para horários específicos, como at 7 o’clock.'
+  },
+  {
+    id: 15,
+    enunciado: 'What does "Although" mean in Portuguese?',
+    alternativas: [
+      'Portanto',
+      'Embora',
+      'Enquanto',
+      'Porque'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Although significa embora, e é usado para introduzir uma ideia de contraste.'
+  },
+  {
+    id: 16,
+    enunciado: 'Complete: How _____ water do you drink every day?',
+    alternativas: [
+      'many',
+      'much',
+      'few',
+      'several'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Usamos much com substantivos incontáveis, como water. Many é usado com substantivos contáveis no plural.'
+  },
+  {
+    id: 17,
+    enunciado: 'Complete: I have lived here _____ 2020.',
+    alternativas: [
+      'for',
+      'during',
+      'since',
+      'from'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'Since indica o ponto em que algo começou. For indica a duração de um período.'
+  },
+  {
+    id: 18,
+    enunciado: 'Choose the correct translation: "Eu vou estudar amanhã."',
+    alternativas: [
+      'I studied tomorrow.',
+      'I am going to study tomorrow.',
+      'I have study tomorrow.',
+      'I was study tomorrow.'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'A estrutura going to expressa planos ou intenções futuras: sujeito + am/is/are + going to + verbo.'
+  },
+  {
+    id: 19,
+    enunciado: 'Complete: There aren’t _____ chairs in the room.',
+    alternativas: [
+      'much',
+      'any',
+      'a little',
+      'a'
+    ],
+    respostaCorreta: 1,
+    explicacao: 'Any é usado frequentemente em frases negativas e perguntas, com substantivos contáveis no plural e incontáveis.'
+  },
+  {
+    id: 20,
+    enunciado: 'Choose the correct question:',
+    alternativas: [
+      'Where you live?',
+      'Where does you live?',
+      'Where do you live?',
+      'Where are you live?'
+    ],
+    respostaCorreta: 2,
+    explicacao: 'No Present Simple, usamos do para formar perguntas com I, you, we e they.'
+  }
+];
+
+// ********************************************** //
+// ************* Perguntas Dificeis ************* //
+// ********************************************** //
 
 // ************* Sorteio de perguntas ************* //
 export function sortearPerguntas(
