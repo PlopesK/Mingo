@@ -50,6 +50,7 @@
 
 .alternativa:hover {
     border-color: var(--roxo-escuro);
+    color: white;
 }
 
 .alternativa.selecionada {

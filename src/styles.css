@@ -5,21 +5,14 @@
     /* Cores */
     --roxo: rgb(158, 172, 231);
     --roxo-escuro: rgb(47, 35, 70);
-    --azul-claro: #9EACE7;
-    --branco: #ffffff;
-    --cinza-fundo: #f0f0f0;
-    --cinza-texto: #383838;
     --verde-escuro: rgb(35, 122, 85);
     --vermelho: rgb(215, 44, 60);
     --cor-especial: rgba(43, 44, 104, 0.87);
 
-
     /* Tamanhos de texto */
     --titulo-principal: 40px;
-    --titulo-secao: 35px;
     --subtitulo: 25px;
     --texto-normal: 20px;
-    --texto-pequeno: 16px;
 }
 
 /* Configuração geral */
@@ -38,10 +31,26 @@ html {
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: var(--cinza-fundo);
-    color: var(--cinza-texto);
     font-family: 'Inter', sans-serif;
     font-size: var(--texto-normal);
+    transition: background 0.5s ease;
+    background: #f0f0f0;
+}
+
+body.fundo-facil {
+  background: linear-gradient(135deg, #d9f5df, #a8e6b5);
+}
+
+body.fundo-medio {
+  background: linear-gradient(135deg, #fff0cc, #ffd58a);
+}
+
+body.fundo-dificil {
+  background: linear-gradient(135deg, #f8dada, #e99b9b);
+}
+
+body.fundo-padrao {
+  background: #f0f0f0;
 }
 
 h1, h2, h3, h4 {
@@ -127,7 +136,7 @@ img {
     padding: 40px;
     margin: 30px auto;
     max-width: 1000px;
-    background-color: var(--branco);
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: black;

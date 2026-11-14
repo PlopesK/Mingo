@@ -1,8 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import {
-  Pergunta,
-  sortearPerguntas
-} from '../../data/perguntas';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Pergunta, sortearPerguntas } from '../../data/perguntas';
 import { salvarResultado } from '../../data/resultados';
 import {RouterLink} from "@angular/router";
 
@@ -13,7 +10,7 @@ import {RouterLink} from "@angular/router";
   templateUrl: './quiz.html',
   styleUrl: './quiz.css'
 })
-export class Quiz implements OnInit {
+export class Quiz implements OnInit, OnDestroy {
 
   @Input() bancoPerguntas: Pergunta[] = [];
   @Input() quantidade: number = 5;
@@ -28,8 +25,44 @@ export class Quiz implements OnInit {
 
   finalizado = false;
 
+  get classeFundo(): string {
+    switch (this.dificuldade.toLowerCase()) {
+      case 'fácil':
+        return 'fundo-facil';
+
+      case 'médio':
+        return 'fundo-medio';
+
+      case 'difícil':
+        return 'fundo-dificil';
+
+      default:
+        return 'fundo-padrao';
+    }
+  }
+
+  atualizarFundo() {
+    document.body.classList.remove(
+      'fundo-facil',
+      'fundo-medio',
+      'fundo-dificil',
+      'fundo-padrao'
+    );
+
+    document.body.classList.add(this.classeFundo);
+  }
+
   ngOnInit() {
+    this.atualizarFundo();
     this.novaPartida();
+  }
+
+  ngOnDestroy() {
+    document.body.classList.remove(
+      'fundo-facil',
+      'fundo-medio',
+      'fundo-dificil',
+    );
   }
 
   get perguntaAtual(): Pergunta {
