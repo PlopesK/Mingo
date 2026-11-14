@@ -4,6 +4,9 @@
 
 A proposta é transformar o estudo em uma experiência dinâmica, na qual você pode testar seus conhecimentos, enfrentar desafios e acompanhar sua evolução enquanto aprende.
 
+Ficou curioso? Então acesse já o nosso site e teste os seus conhecimentos!
+📘 **[Mingo Academy](https://mingo-academy.netlify.app)**
+
 > Aprender inglês não precisa ser complicado. Pratique, desafie-se e evolua com o Mingo!
 
 ---
