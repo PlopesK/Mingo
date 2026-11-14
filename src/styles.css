@@ -73,6 +73,9 @@ a {
     flex-direction: row;
     max-width: 100%;
     box-shadow: #1d1d49 0px 4px 6px -1px, #1d1d49 0px 2px 4px -1px;
+
+    transition: background-color 0.3s ease,
+        transform 0.2s ease;
 }
 
 img {

@@ -13,7 +13,7 @@
     text-align: left;
 }
 
-#apresentacao h3 {
+#apresentacao h2 {
     font-size: var(--subtitulo);
     margin-bottom: 15px;
 }
